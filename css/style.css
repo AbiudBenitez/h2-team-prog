@@ -5,3 +5,129 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+:root {
+  --one: #ffffff;
+  --two: #cc99ff;
+  --tree: #ff9933;
+  --four: #ffffcc;
+  --five: #80f2ff;
+  --extra: rgb(184, 184, 184);
+  --text: #000000;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tcenter {
+  text-align: center;
+}
+
+.plan {
+  width: 99.1vw;
+}
+
+td {
+  width: 10%;
+  height: 7rem;
+  border: var(--text) solid;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.inv {
+  border: none;
+}
+
+.small {
+  height: 1.5rem;
+}
+
+.one {
+  background: linear-gradient(
+    to bottom,
+    var(--two),
+    var(--one) 50%,
+    var(--two)
+  );
+}
+
+.two {
+  background: linear-gradient(
+    to bottom,
+    var(--tree),
+    var(--one) 50%,
+    var(--tree)
+  );
+}
+
+.tree {
+  background: linear-gradient(
+    to bottom,
+    var(--four),
+    var(--one) 50%,
+    var(--four)
+  );
+}
+
+.extra {
+  background: linear-gradient(
+    to bottom,
+    var(--extra),
+    var(--one) 50%,
+    var(--extra)
+  );
+}
+
+.rel {
+  background: linear-gradient(
+    to bottom,
+    var(--five),
+    var(--one) 50%,
+    var(--four)
+  );
+}
+
+.down {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.listcat {
+  margin: 2rem;
+  text-align: justify;
+}
+
+footer {
+  background-color: var(--extra);
+  color: var(--text);
+  padding: 1em;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sub {
+  font-weight: bold;
+}
+
+.name {
+  grid-column: span 2;
+}
+
+hr {
+  margin: 1em;
+  visibility: hidden;
+}
+
+.last {
+  grid-column: 1/-1;
+}
